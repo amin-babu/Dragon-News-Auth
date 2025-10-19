@@ -1,7 +1,7 @@
 import React from 'react';
-import fb from '../../assets/fb.png'
-import insta from '../../assets/instagram.png'
-import twitter from '../../assets/twitter.png'
+import fb from '../../assets/Facebook.png'
+import insta from '../../assets/Instagram.png'
+import twitter from '../../assets/Twitter.png'
 
 const FindUs = () => {
   return (
@@ -9,14 +9,14 @@ const FindUs = () => {
       <h2 className='font-semibold'>Find Us On</h2>
       <div className='mt-3'>
         <div className="join join-vertical w-full">
-          <button className="btn justify-start join-item bg-transparent">
-            <img src={fb} alt="" /> Facebook
+          <button className="btn font-medium py-6 text-accent justify-start join-item bg-transparent">
+            <img className='mr-1' src={fb} alt="" /> Facebook
           </button>
-          <button className="btn justify-start join-item bg-transparent">
-            <img src={twitter} alt="" /> Twitter
+          <button className="btn font-medium py-6 text-accent justify-start join-item bg-transparent">
+            <img className='mr-1' src={twitter} alt="" /> Twitter
           </button>
-          <button className="btn justify-start join-item bg-transparent">
-            <img src={insta} alt="" /> Instagram
+          <button className="btn font-medium py-6 text-accent justify-start join-item bg-transparent">
+            <img className='mr-1' src={insta} alt="" /> Instagram
           </button>
         </div>
       </div>

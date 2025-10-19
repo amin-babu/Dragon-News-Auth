@@ -11,9 +11,9 @@ const Navbar = () => {
         <NavLink to='/about'>About</NavLink>
         <NavLink to='/career'>Career</NavLink>
       </div>
-      <div className='login-btn flex gap-2 items-center ml-auto'>
+      <div className='flex gap-2 items-center ml-auto'>
         <img src={user} alt="" />
-        <button className='btn btn-primary py-5 px-10 h-0 rounded-none shadow-none '>Login</button>
+        <button className='btn btn-primary py-5 px-10 h-0 rounded-none shadow-none'>Login</button>
       </div>
     </div>
   );
