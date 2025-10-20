@@ -2,10 +2,11 @@ import { FaStar, FaEye, FaBookmark } from "react-icons/fa";
 import { CiBookmark, CiShare2 } from "react-icons/ci";
 import { useState } from "react";
 import { GoBookmark, GoBookmarkFill } from "react-icons/go";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
   const [bookMark, setBookMark] = useState(false);
-  const { author, title, thumbnail_url, details, rating, total_view } = news;
+  const { author, id, title, thumbnail_url, details, rating, total_view } = news;
 
   return (
     <div className="card bg-base-100 border border-base-200 mb-6">
@@ -55,7 +56,7 @@ const NewsCard = ({ news }) => {
       {/* Details */}
       <div className="p-4 text-sm text-gray-600 leading-relaxed">
         {details.slice(0, 300)}...
-        <span className="text-primary font-medium cursor-pointer"> Read More</span>
+        <Link to={`/news-details/${id}`} className="text-primary font-medium cursor-pointer"> Read More</Link>
       </div>
 
       {/* Footer */}

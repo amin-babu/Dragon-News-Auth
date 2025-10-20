@@ -17,7 +17,7 @@ const QZone = () => {
       </div>
 
       <div>
-        <img src={bg} alt="" />
+        <img className='w-full' src={bg} alt="" />
       </div>
     </>
 

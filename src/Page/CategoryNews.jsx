@@ -22,8 +22,6 @@ const CategoryNews = () => {
     }
   }, [data, id]);
 
-  console.log(categoryNews);
-
   return (
     <div>
       <h4 className='font-semibold mb-4'>
