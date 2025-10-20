@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <div className='grid grid-cols-3 items-center'>
       <div className='flex gap-2 items-center'>
-        <img src={userimg} alt="" />
-        <p className='font-medium'>{user && user.email}</p>
+        <img className='w-10 h-10 object-cover rounded-full' src={`${user ? user.photoURL : userimg}`} alt="" />
+        <p className='font-medium'>{user && user.displayName}</p>
       </div>
       <div className='nav space-x-3 text-center text-accent'>
         <NavLink to='/'>Home</NavLink>
